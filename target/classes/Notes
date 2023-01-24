@@ -1,0 +1,12 @@
+//System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Third_Party_Browsers\\geckodriver.exe");
+	//WebDriver driver= new FirefoxDriver();
+	
+	
+	//System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Third_Party_Browsers\\chromedriver.exe");
+	//WebDriver driver= new ChromeDriver();
+	
+	// Both lines above, are for creating a driver for the ENTIRE webpage.
+	 // However; a mini driver can be created as follows:
+	
+}           // WebElement someSection= driver.findElement(By.id("gf-BIG"));
+            // someSection.findElements(By.("")). ....... ;
