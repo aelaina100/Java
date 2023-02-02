@@ -1,10 +1,12 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 // 1st program
 public class A {
-
-	public static void main(String[] args) throws InterruptedException {
+    
+	@Test
+	public void ATest() throws InterruptedException {
 		// The below 2 lines invoke the browser
      
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Third_Party_Browsers\\chromedriver.exe");

@@ -1,11 +1,12 @@
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+
+                                  // Not resolved
 //When typing characters into google, a suggestive list appears. Choose one of choice:
   // Type is " The theory of " and select "The theory of relativity"
 public class z_Auto_SuggesDrop {

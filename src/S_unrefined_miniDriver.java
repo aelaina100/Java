@@ -13,16 +13,14 @@ public class S_unrefined_miniDriver {
 	public static void main(String[] args) throws InterruptedException {
 		// On: https://www.rahulshettyacademy.com/AutomationPractice/
 // 1- Count the total number of links on the web page.
-// 2- Count the number of links in the footer section only.
-		
+// 2- Count the number of links in the footer section only.	
 // 3- Count the  number of links in the 1st vertical section of the footer section.
 // 4- Count the  number of links in the 2nd vertical section of the footer section.
 // 5- Count the  number of links in the 3rd vertical section of the footer section.
 // 6-  Count the  number of links in the 4th  vertical section of the footer section.
-
 // 7- In the footer section, count the number of Links sharing a bigger font.
-
 // 8- In the footer section: Click on each link and get their respective page title.
+		
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Third_Party_Browsers\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
@@ -84,7 +82,8 @@ public class S_unrefined_miniDriver {
 	    	driver.switchTo().window(windowHandleId);
 	    	String pageTitle= driver.getTitle();
 	    	System.out.println("Page Title is: " + "[" + pageTitle + "]" + " for link number: " +count);
-	    	//driver.switchTo().defaultContent(); // why did I even include this line ?? 
+	    	//driver.switchTo().defaultContent(); 
+	    	//The very above line is meaningless. The output would be the same. Doesn't effect the position of the iterating object 'it'.
 	    }
 		driver.quit();
 	}
